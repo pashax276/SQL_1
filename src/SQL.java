@@ -6,9 +6,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- * Created by Павел on 18.01.14.
- */
 public class SQL {
     private static final String DB_DRIVER = "com.mysql.jdbc.Driver";
     private static final String DB_CREATE = "jdbc:mysql://localhost:3306/"; // 127.0.0.1:3306/mydb
@@ -79,6 +76,7 @@ public class SQL {
                 if (statement != null)
                     connection.close();
             } catch (SQLException se) {
+                se.getStackTrace();
             }// do nothing
             try {
                 if (connection != null)
@@ -117,7 +115,8 @@ public class SQL {
                 if (statement != null)
                     connection.close();
             } catch (SQLException se) {
-            }// do nothing
+                se.getStackTrace();
+            }
             try {
                 if (connection != null)
                     connection.close();
@@ -174,6 +173,7 @@ public class SQL {
                 if (statement != null)
                     connection.close();
             } catch (SQLException se) {
+                se.getStackTrace();
             }// do nothing
             try {
                 if (connection != null)

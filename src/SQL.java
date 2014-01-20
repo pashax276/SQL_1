@@ -24,7 +24,7 @@ public class SQL {
                 System.out.println("1 - СОЗДАТЬ БД");
                 System.out.println("2 - ПОДКЛЮЧИТЬСЯ И РЕДАКТИРОВАТЬ СУЩЕСТВУЮЩЮЮ БД");
                 System.out.println("3 - УДАЛИТЬ");
-                System.out.println("4 - для вывода информации");
+               // System.out.println("4 - для вывода информации");
                 System.out.println("что-то другое для выхода");
 
                 String s = d.readLine();
